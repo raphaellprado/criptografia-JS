@@ -1,4 +1,39 @@
 *{
+    margin: 0;
+    margin-top: 2vh;
+    border: 0;
+    padding: 0;
+}
+body{
     background-color: #F3F5FC;
     color:#0A3871;
+}
+main{
+    display: flex;
+}
+.main_logo{
+    margin-left: 40px;
+    gap: 40px;
+}
+.main_text_warning{
+    gap: 0;
+    margin: 0,0,0,0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main_text_buttons{
+    margin: 0;
+    gap: 3vh;
+    justify-content: center;
+}
+textarea {
+  background-color: #F3F5FC;
+}
+
+.main_crypt{
+    height: 90vh;
+    margin: 40vh, ;
+    background-color: #FFFFFF;
+    border-radius: 20px;
 }
