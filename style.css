@@ -1,18 +1,4 @@
-* {
-    display:block;
+*{
     background-color: #F3F5FC;
     color:#0A3871;
-}
-.logo_main{
-    display: flexbox;
-    flex-direction: column;
-    margin: 40px, 0, 0, 40px;
-}
-.text_main{
-    display: flexbox;
-    flex-direction: row;
-}
-.crypto_main{
-    display: flexbox;
-    flex-direction: row;
 }

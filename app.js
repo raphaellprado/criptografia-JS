@@ -15,12 +15,12 @@ function decripto(text) {
     return text;
 }  
   // COMO USAR:
-  const textoOriginal = "Texto Criptografado";
-  const textoCriptografado = cripto(textoOriginal);
-  const textoDescriptografado = decripto(textoCriptografado)
-  console.log("Texto original:", textoOriginal);
-  console.log("Texto criptografado:", textoCriptografado);
-  console.log("Texto descriptografado:", textoDescriptografado);
+const textoOriginal = "Texto Criptografado";
+const textoCriptografado = cripto(textoOriginal);
+const textoDescriptografado = decripto(textoCriptografado)
+console.log("Texto original:", textoOriginal);
+console.log("Texto criptografado:", textoCriptografado);
+console.log("Texto descriptografado:", textoDescriptografado);
 /*
 As "chaves" de criptografia que utilizaremos são:
 A letra "e" é convertida para "enter"
