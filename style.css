@@ -1,39 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-const:#FFFFFF;
+    --color-second:#0A3871;
+    --color-first:#F3F5FC;
+    --color-disable:#D8DFE8;
+    --font-first: 'Inter', sans-serif;
+}
 *{
-    margin: 0;
-    margin-top: 2vh;
+    margin: 1vh;
     border: 0;
     padding: 0;
+    max-height: 99vh;
+    font-family: var(--font-first);
+    font-size: 1rem;
 }
 body{
-    background-color: #F3F5FC;
-    color:#0A3871;
+    background-color: var(--color-first);
+    color:var(--color-second);
 }
 main{
     display: flex;
+    justify-content: space-between;
 }
-.main_logo{
-    margin-left: 40px;
-    gap: 40px;
+textarea{
+    resize: none;
+}
+.main_logo a{
+    margin-left: 2%;
+    gap: 5%;
+    max-height: 5vh;
+}
+.main_logo img{
+    width: 120px;
+    height: 48px;
+    object-fit: contain;
+    object-position: bottom;
+}
+.main_text{
+    margin: 10%;
+    max-height: 90vmax;
+
+}
+.main_text textarea{
+    background-color: var(--color-first);
+    border-radius: 0;
+    color: var(--color-second);
 }
 .main_text_warning{
     gap: 0;
-    margin: 0,0,0,0;
+    margin: 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.main_text_buttons{
-    margin: 0;
-    gap: 3vh;
+.main_text_buttons button{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-second);
+    width: 50%;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: var(--font-first);
 }
-textarea {
-  background-color: #F3F5FC;
+.main_text_buttons_enable{
+    background-color: var(--color-second);
+    color: var(--color-const);
 }
-
+.main_text_buttons_disable{
+    background-color: var(--color-disable);
+    font: var(--color-const);
+}
 .main_crypt{
-    height: 90vh;
-    margin: 40vh, ;
-    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 25vmax;
+    max-height: 100vh;
+    background-color: var(--color-const);
     border-radius: 20px;
+    text-align: center;
+}
+.main_crypt_descryto textarea{
+    background-color: var(--color-const);
+}
+.main_crypt_image {
+    gap: 10%;
+    margin: 2%;
+    text-align: center;
+}
+.main_crypt_image img{
+    object-fit: contain;
+    object-position: bottom;
+}
+.main_crypt_text{
+    gap: 10%;
+    margin: 2%;
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+@media (width <= 1174px) {
+    *{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    img{
+        width: 31px;
+        height: 50px;
+    }
+}
+@media (width <= 933px) {
+    *{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    img{
+        width: 33px;
+        height: 48px;
+    }
+    .main_crypt_image img{
+
+    }
 }

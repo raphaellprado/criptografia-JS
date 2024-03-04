@@ -3,32 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Criptografia</title>
 </head>
 <body>
-    <header></header>
-    <main class="main">
+    <header>
         <div class="main_logo">
-            <img src="img/Logo.png" alt="">
+            <a target="_blank" href="https://www.alura.com.br"><img src="img/Logo.png" alt=""></a>
         </div>
+    </header>
+    <main class="main">
+
         <div class="main_text">
             <div class="main_text_crypto">
-                <textarea  id="cryto1" name="cryto" rows="30" cols="150">Digite seu texto</textarea>
+                <textarea  id="cryto1" name="cryto" cols="50" rows="10" autocomplete="on" autofocus>Digite seu texto</textarea>
             </div>
             <div class="main_text_warning">
                 <img src="img/expla.png" alt="">
                 <p>Apenas letras sem acento.</p>
             </div>
             <div class="main_text_buttons">
-                <button name="cryto_btn">Criptografar</button>
-                <button name="descryto_btn">Descriptografar</button>        
+                <nav>
+                    <button class="main_text_buttons_enable" enableb >Criptografar</button>
+                    <button class="main_text_buttons_disable" disabled >Descriptografar</button>
+                </nav>
             </div>
         </div>
         <div class="main_crypt">
-            <img src="img/fig.png" alt="">
-            <h1>Nenhuma mensagem encontrada</h1>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>        
+            <div class="main_crypt_descryto">
+                <textarea name="descryto" id="descryto1" rows="10" disabled readonly autocomplete="on"></textarea>
+            </div>
+            <div class="main_crypt_image">
+                <img src="img/fig.png" alt="">
+            </div>
+            <div class="main_crypt_text">
+                <h1>Nenhuma mensagem encontrada</h1>
+                <br>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
         </div>
         <script src="app.js"></script>    
     </main>
