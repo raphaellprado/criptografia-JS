@@ -18,12 +18,12 @@
     <main class="main">
 
         <div class="main_text">
-            <div class="main_text_crypto">
-                <textarea  id="cryto1" name="cryto" cols="50" rows="10" autocomplete="on" autofocus class="cripto">Digite seu texto</textarea>
+            <div class="main_text_cripto">
+                <textarea  id="cripto1" name="crito" cols="50" rows="10" autocomplete="on" autofocus class="cripto">Digite seu texto</textarea>
             </div>
             <div class="main_text_warning">
                 <img src="img/expla.png" alt="">
-                <p>Aceita todos os caracteres</p>.</p>
+                <p>Apenas letras sem acento.</p>
             </div>
             <div class="main_text_buttons">
                 <nav>
@@ -32,17 +32,16 @@
                 </nav>
             </div>
         </div>
-        <div class="main_crypt">
-            <div class="main_crypt_descryto">
-                <textarea name="descryto" id="descryto1" rows="10" disabled readonly autocomplete="on"></textarea>
-            </div>
-            <div class="main_crypt_image">
+        <div class="main_cripto">
+            <div class="main_cripto_side">
                 <img src="img/fig.png" alt="">
-            </div>
-            <div class="main_crypt_text">
                 <h1>Nenhuma mensagem encontrada</h1>
                 <br>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="main_cripto_descripto">
+                <textarea name="descrito" id="descrito1" rows="10" disabled readonly autocomplete="on"></textarea>
+                <button onclick="clipboardCopy()" id="copy" enableb >Copiar</button>
             </div>
         </div>
         <script src="app.js"></script>    
