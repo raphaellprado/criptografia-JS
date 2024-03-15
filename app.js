@@ -1,26 +1,22 @@
-function cripto(text) {
-    text = text.replace(/e/g, "enter");
-    text = text.replace(/i/g, "imes");
-    text = text.replace(/a/g, "ai");
-    text = text.replace(/o/g, "ober");
-    text = text.replace(/u/g, "ufat");    
-    return text;
+function cripto() {
+  let input = document.getElementById("cryto1").value;
+  input = input.replace(/e/g, "enter");
+  input = input.replace(/i/g, "imes");
+  input = input.replace(/a/g, "ai");
+  input = input.replace(/o/g, "ober");
+  input = input.replace(/u/g, "ufat");    
+  document.getElementById("descryto1").value = input;
+
 }
-function decripto(text) {
-    text = text.replace(/enter/g, "e");
-    text = text.replace(/imes/g, "i");
-    text = text.replace(/ai/g, "a");
-    text = text.replace(/ober/g, "o");
-    text = text.replace(/ufat/g, "u");    
-    return text;
+function decripto() {
+  let output = document.getElementById('descryto1').value;
+  output = output.replace(/enter/g, "e");
+  output = output.replace(/imes/g, "i");
+  output = output.replace(/ai/g, "a");
+  output = output.replace(/ober/g, "o");
+  output = output.replace(/ufat/g, "u");    
+  document.getElementById("descryto1").value = output;
 }  
-  // COMO USAR:
-const textoOriginal = "Texto Criptografado";
-const textoCriptografado = cripto(textoOriginal);
-const textoDescriptografado = decripto(textoCriptografado)
-console.log("Texto original:", textoOriginal);
-console.log("Texto criptografado:", textoCriptografado);
-console.log("Texto descriptografado:", textoDescriptografado);
 /*
 As "chaves" de criptografia que utilizaremos são:
 A letra "e" é convertida para "enter"

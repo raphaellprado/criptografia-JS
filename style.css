@@ -9,9 +9,9 @@
 }
 *{
     margin: 1vh;
+    max-height: 99vh;
     border: 0;
     padding: 0;
-    max-height: 99vh;
     font-family: var(--font-first);
     font-size: 1rem;
 }
@@ -89,6 +89,7 @@ textarea{
     text-align: center;
 }
 .main_crypt_descryto textarea{
+    margin: 10px
     background-color: var(--color-const);
 }
 .main_crypt_image {
