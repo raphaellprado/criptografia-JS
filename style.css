@@ -59,7 +59,7 @@ textarea{
     justify-content: flex-start;
     align-items: center;
 }
-.main_text_buttons button{
+.main_text_buttons button, .main_cripto_descripto button{
     gap: 16px;
     padding: 10px 0;
     border: 2px solid var(--color-second);
@@ -70,7 +70,7 @@ textarea{
     text-decoration: none;
     font-family: var(--font-first);
 }
-.main_text_buttons_enable{
+.main_text_buttons_enable {
     background-color: var(--color-second);
     color: var(--color-const);
 }
@@ -78,7 +78,11 @@ textarea{
     background-color: var(--color-disable);
     font: var(--color-const);
 }
-.main_crypt{
+.main_cripto_descripto_button_copy{
+    background-color: var(--color-const);
+    font: var(--color-const);
+}
+.main_cripto{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,23 +92,12 @@ textarea{
     border-radius: 20px;
     text-align: center;
 }
-.main_crypt_descryto textarea{
+.main_cripto_descripto textarea{
     margin: 10px
     background-color: var(--color-const);
 }
-.main_crypt_image {
-    gap: 10%;
-    margin: 2%;
-    text-align: center;
-}
-.main_crypt_image img{
-    object-fit: contain;
-    object-position: bottom;
-}
-.main_crypt_text{
-    gap: 10%;
-    margin: 2%;
-    text-align: center;
+.main_cripto_descripto{
+    display: none;
 }
 footer{
     text-align: center;
@@ -115,11 +108,17 @@ footer{
         flex-direction: column;
         width: auto;
     }
+    .main_cripto_side{
+        display: none;
+    }
 }
 @media (width <= 933px) {
     *{
         display: flex;
         flex-direction: column;
         width: auto;
+    }
+    .main_cripto_side{
+        display: none;
     }
 }
